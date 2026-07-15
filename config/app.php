@@ -1,0 +1,33 @@
+<?php
+return [
+    'name' => 'SpecialGig',
+    'url' => 'http://localhost:8080',
+    'env' => 'development',
+    'debug' => true,
+    'version' => '1.0.0',
+    'timezone' => 'UTC',
+    'locale' => 'en',
+    'currency' => 'USD',
+    'currency_symbol' => '$',
+    'mail' => [
+        'host' => '',
+        'port' => 587,
+        'username' => '',
+        'password' => '',
+        'encryption' => 'tls',
+        'from_address' => 'noreply@specialgig.com',
+        'from_name' => 'SpecialGig',
+    ],
+    'recaptcha' => [
+        'site_key' => '',
+        'secret_key' => '',
+    ],
+    'pagination' => 20,
+    'commission_rate' => 10,
+    'min_withdrawal' => 5,
+    'max_withdrawal' => 10000,
+    'referral_bonus' => 1,
+    'referral_commission_rate' => 5,
+    'new_user_bonus' => 0,
+    'daily_reward' => 0,
+];
