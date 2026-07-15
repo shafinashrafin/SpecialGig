@@ -1,9 +1,9 @@
 <?php
 return [
     'name' => 'SpecialGig',
-    'url' => 'http://localhost:8080',
-    'env' => 'development',
-    'debug' => true,
+    'url' => getenv('APP_URL') ?: 'http://localhost:8080',
+    'env' => getenv('APP_ENV') ?: 'development',
+    'debug' => filter_var(getenv('APP_DEBUG') ?: true, FILTER_VALIDATE_BOOLEAN),
     'version' => '1.0.0',
     'timezone' => 'UTC',
     'locale' => 'en',
